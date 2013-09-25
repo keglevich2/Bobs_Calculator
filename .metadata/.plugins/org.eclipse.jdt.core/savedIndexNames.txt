@@ -1,0 +1,18 @@
+INDEX VERSION 1.126+C:\Documents and Settings\Administrator\Bobs-Calculator\.metadata\.plugins\org.eclipse.jdt.core
+523524643.index
+708268560.index
+2942976868.index
+2704247448.index
+2890420777.index
+2789742401.index
+608554336.index
+2737842241.index
+1941840976.index
+4201300649.index
+1443133809.index
+2594439072.index
+4085131780.index
+1363665972.index
+2311762821.index
+2603968387.index
+4262862669.index

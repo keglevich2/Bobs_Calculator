@@ -1,0 +1,15 @@
+package main;
+
+import com.gadberry.utility.expression.Expression;
+import com.gadberry.utility.expression.InvalidExpressionException;
+
+public class Main {
+	
+	
+	public static void main(String[] args) throws InvalidExpressionException {
+		Expression exp = new Expression("1 + 2");
+		SimpleResolver resolver = new SimpleResolver();
+		exp.setResolver(new SimpleResolver());
+		String result = exp.evaluate().toString();
+	}
+}

@@ -1,0 +1,14 @@
+package main;
+
+import com.gadberry.utility.expression.Expression;
+import com.gadberry.utility.expression.InvalidExpressionException;
+
+public class Main {
+
+	public static void main(String[] args) throws InvalidExpressionException {
+		Expression exp = new Expression("2^2");
+		exp.setResolver(new SimpleResolver());
+		String result = exp.evaluate().toString();
+		System.out.println(result);
+	}
+}
