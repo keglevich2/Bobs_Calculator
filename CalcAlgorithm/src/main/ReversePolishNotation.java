@@ -1,9 +1,10 @@
+package main;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.Scanner;
 import java.util.Stack;
 
 public class ReversePolishNotation {
@@ -15,12 +16,15 @@ public class ReversePolishNotation {
 	private static final Map<String, int[]> OPERATORS = new HashMap<String, int[]>();
 	static {
 		// Map<"token", []{precendence, associativity}>
-		OPERATORS.put("+", new int[] { 0, LEFT_ASSOC });
-		OPERATORS.put("-", new int[] { 0, LEFT_ASSOC });
-		OPERATORS.put("*", new int[] { 5, LEFT_ASSOC });
-		OPERATORS.put("/", new int[] { 5, LEFT_ASSOC });
-		OPERATORS.put("%", new int[] { 5, LEFT_ASSOC });
-		OPERATORS.put("^", new int[] { 10, RIGHT_ASSOC });
+		OPERATORS.put("+", new int[] { 6, LEFT_ASSOC });
+		OPERATORS.put("-", new int[] { 7, LEFT_ASSOC });
+		OPERATORS.put("*", new int[] { 10, LEFT_ASSOC });
+		OPERATORS.put("/", new int[] { 10, LEFT_ASSOC });
+		OPERATORS.put("%", new int[] { 10, LEFT_ASSOC });
+		OPERATORS.put("^", new int[] { 20, RIGHT_ASSOC });
+		OPERATORS.put("sin", new int[] { 20, RIGHT_ASSOC });
+		OPERATORS.put("cos", new int[] { 20, RIGHT_ASSOC });
+		OPERATORS.put("tan", new int[] { 20, RIGHT_ASSOC });
 	}
 	private static final List<String> nonOper = new ArrayList<String>();
 
@@ -170,7 +174,7 @@ public class ReversePolishNotation {
 
 	}
 
-	private static String spaceAdder(String expression) {
+	public static String spaceAdder(String expression) {
 
 		String result = "";
 		for (int i = 0; i < expression.length(); i++) {

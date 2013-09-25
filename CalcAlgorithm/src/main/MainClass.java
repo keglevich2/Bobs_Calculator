@@ -1,3 +1,5 @@
+package main;
+
 import javax.script.ScriptException;
 
 public class MainClass {

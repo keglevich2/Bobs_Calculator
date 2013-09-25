@@ -2,5 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/Documenti/Downloads/JExel-1_0_0-beta_13.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/Documenti/Downloads/antlr-4.1-complete.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
